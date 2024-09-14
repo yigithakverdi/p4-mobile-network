@@ -1,4 +1,4 @@
-# Project Title: SDN and P4 Integrated Mobile Network Simulation
+# SDN and P4 Integrated Mobile Network Simulation
 This repository hosts an advanced network simulation project that integrates Software-Defined Networking (SDN) and P4 programmable switches to create a realistic mobile network environment. It combines a SDN-controlled mobile network simulation with a P4-based distributed consensus mechanism. The project utilizes Kathara for network device simulation and implements custom P4 programs and SDN controller applications.
 
 ## Table of Contents
