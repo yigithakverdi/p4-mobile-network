@@ -1,0 +1,12 @@
+ip addr add 20.0.1.6/24 dev eth2
+ip link set ap1 address 00:00:00:00:00:11
+
+/usr/share/openvswitch/scripts/ovs-ctl --system-id=random start
+ovs-vsctl add-br ap1
+ovs-vsctl add-port ap1 eth0
+ovs-vsctl add-port ap1 eth1
+#ovs-vsctl set Bridge ap1 stp_enable=true
+ovs-vsctl set Bridge ap1 other-config:datapath-id=0123456789abcde1
+
+
+ovs-vsctl set-controller ap1 tcp:20.0.1.100:6633
